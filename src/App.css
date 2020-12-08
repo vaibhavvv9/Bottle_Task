@@ -1,38 +1,78 @@
 .App {
   text-align: center;
+  width: 95%;
+  margin: 15px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-drag {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.none {
+  position: absolute;
+  width: 350px;
+  height: 100vh;
+  left: 0;
+  top: 10;
+  background-color: #EEEEEE;
+  border-right: 1px dotted;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  /* //display: inline-block;
+ 
+  padding: 0;
+  background-color: #E0E0E0;
+  //width:100%; */
+  margin-left: -120px;
+}
+
+.task-header {
+  display: inline-block;
+  background-color: #56A286;
+  width:100%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.droppable {
+  position: absolute;
+  width: 350px;
+  height: 100vh;
+  right: 0;
+  top: 10;
+  background-color: #EEEEEE;
+  border-left: 1px dotted;
+}
+.progress{
+  position: absolute;
+  width: 350px;
+  height: 100vh;
+  right: 400px;
+  top: 10;
+  background-color: #EEEEEE;
+  border-left: 1px dotted;
+}
+.todo{
+  position: absolute;
+  width: 350px;
+  height: 100vh;
+  left: 400px;
+  top: 10;
+  background-color: #EEEEEE;
+  border-left: 1px dotted;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.draggable {
+  width: 90%;
+  height: 50px;
+  background-color: #56A286;
+  margin: 5px auto;
+  line-height: 5em;
+  color: white;
+    font-size: 20px;
+    font-family: fangsong;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
